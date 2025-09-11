@@ -4,79 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hussam Makhoul</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-
-  <table width="100%" cellpadding="15">
-    <tr>
-      <td align="center">
-        <a href="index.html">Landing</a>
-        <a href="portfolio.html">Technical Portfolio</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a href="service.html">Service</a>
-        <a href="AIpage.html">AI</a>
-      </td>
-    </tr>
-  </table>
-
-
-
-  <h1>Hussam Makhoul</h1>
-  <hr>
-  <h3>Texas A&amp;M Student Intrested in Data</h3>
-  <img src="PersonalPicture.jpeg" alt="Personal Picture" width="200">
+  
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="AIpage.html">AI</a></li>
+      </ul>
+    </div>
+  </nav>
 
   
-  <p>
-    <a href="https://github.com/yourgithub" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
-    <a href="mailto:youremail@example.com">Email</a>
-  </p>
+  <section class="hero">
+    <div class="container">
+      <img src="PersonalPicture.jpeg" alt="Hussam Makhoul" class="hero-image">
+      <h1>Hussam Makhoul</h1>
+      <p class="subtitle">Texas A&M Student Passionate About Data & Technology</p>
+      
+      <div class="social-links">
+        <a href="https://github.com/Hussam-Mak" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/hussam-makhoul123/" target="_blank">LinkedIn</a>
+        <a href="mailto:hussammakhoul@tamu.edu">Email</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+          Hello! My name is Hussam Makhoul, and I am a student at Texas A&M University passionate about technology, problem-solving, and continuous learning. I enjoy exploring new ideas, collaborating with others, and building projects that make an impact.
+        </p>
+        <p class="about-text">
+          I recently worked as a Data Science Intern at Lockheed Martin, where I built pipelines, automated workflows, and analyzed data to improve efficiency. I also completed the SEO Tech Developer fellowship, a selective program where I developed full-stack applications, practiced pair programming, and collaborated with a diverse, talented cohort.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>Python</span>
+            <span>85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>Java</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>C++</span>
+            <span>60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>JavaScript</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>SQL</span>
+            <span>65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-  <div id="about">
-    <h2>About Me</h2>
-    <p>
-Hello! My name is Hussam Makhoul, and I am a student at Texas A&M University passionate about technology, problem-solving, and continuous learning. I enjoy exploring new ideas, collaborating with others, and building projects that make an impact.
-I recently worked as a Data Science Intern at Lockheed Martin, where I built pipelines, automated workflows, and analyzed data to improve efficiency. I also completed the SEO Tech Developer fellowship, a selective program where I developed full-stack applications, practiced pair programming, and collaborated with a diverse, talented cohort.
-    </p>
+
+
+
   </div>
-
-<div id="skills">
-  <h2>Skills</h2>
-
-  <div>
-    <label>Python</label>
-    <progress value="85" max="100"></progress>
-  </div>
-
-  <div>
-    <label>Java</label>
-    <progress value="70" max="100"></progress>
-  </div>
-
-  <div>
-    <label>C++</label>
-    <progress value="60" max="100"></progress>
-  </div>
-
-  <div>
-    <label>JavaScript</label>
-    <progress value="75" max="100"></progress>
-  </div>
-
-  <div>
-    <label>SQL</label>
-    <progress value="65" max="100"></progress>
-  </div>
-</div>
-
-
-
-
-
 </body>
 </html>
 

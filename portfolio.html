@@ -4,51 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Portfolio - Hussam Makhoul</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-
-  <!-- Navbar -->
-  <table width="100%" cellpadding="15">
-    <tr>
-      <td align="center">
-        <a href="index.html">Landing</a>
-        <a href="portfolio.html">Technical Portfolio</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a href="service.html">Service</a>
-        <a href="AIpage.html">AI</a>
-      </td>
-    </tr>
-  </table>
   
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="AIpage.html">AI</a></li>
+      </ul>
+    </div>
+  </nav>
 
   
-  <h1>Technical Portfolio</h1>
-  <hr>
+  <section class="hero">
+    <div class="container">
+      <h1>Technical Portfolio</h1>
+      <p class="subtitle">Projects and work that showcase my technical skills</p>
+    </div>
+  </section>
 
-  <h2>Highlighted Projects</h2>
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of my most impactful technical work</p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card-title">Insight to Impact</h3>
+          <div class="card-meta">
+            <span class="tag primary">Python</span>
+            <span class="tag secondary">GeoPandas</span>
+            <span class="tag accent">TypeScript</span>
+            <span class="tag">Folium</span>
+          </div>
+          <p class="card-description">
+            Built a client-facing data dashboard for JPMorgan Chase Data for Good Hackathon 2025. 
+            Cleaned, visualized, and presented insights under a 35-hour deadline. 
+            Streamlined location-based expansion planning with a customized Folium Geomap.
+          </p>
+        </div>
 
-  <h3>Insight to Impact – JPMorgan Chase Data for Good Hackathon 2025</h3>
-  <p>
-    Built a client-facing data dashboard in <b>Python, GeoPandas, TypeScript, Folium</b> 
-    to clean, visualize, and present insights under a 35-hour deadline.  
-    Streamlined location-based expansion planning with a customized Folium Geomap.
-  </p>
+        <div class="card">
+          <h3 class="card-title">NER Classifier</h3>
+          <div class="card-meta">
+            <span class="tag primary">Python</span>
+            <span class="tag secondary">BERT</span>
+            <span class="tag accent">Hugging Face</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <p class="card-description">
+            Engineered a BERT-based Named Entity Recognition model for eBay EvalAI ML Hackathon. 
+            Extracted 28+ product attributes from over 2M+ eBay listings. 
+            Tackled noisy text and misspellings with a whitespace tokenization approach.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>NER Classifier – eBay EvalAI ML Hackathon</h3>
-  <p>
-    Engineered a <b>BERT-based NER model</b> in <b>Python, Hugging Face, Pandas</b> 
-    to extract 28+ product attributes from over 2M+ eBay listings.  
-    Tackled noisy text and misspellings with a whitespace tokenization approach.
-  </p>
+  
+  <section class="section" style="background-color: var(--background-alt);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">More Projects</h2>
+        <p class="section-subtitle">Explore my complete portfolio on GitHub</p>
+      </div>
+      <div class="text-center">
+        <a href="https://github.com/Hussam-Mak" target="_blank" class="btn">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
-
-  <hr>
-  <h2>GitHub Repository</h2>
-  <p>
-    You can find more of my projects here:  
-    <a href="https://github.com/Hussam-Mak" target="_blank">github.com/Hussam-Mak</a>
-  </p>
-
+  </div>
 </body>
 </html>
