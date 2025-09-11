@@ -123,3 +123,16 @@ a {
   color: #2563eb;
   text-decoration: none;
 }
+
+
+#ai-prompt .prompt-text {
+  white-space: pre-wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95rem;
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  color: #333333;
+  line-height: 1.55;
+}
