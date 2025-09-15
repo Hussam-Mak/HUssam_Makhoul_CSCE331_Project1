@@ -1,5 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+}
 
 .nav-links {
   display: flex;
@@ -8,10 +32,28 @@
   list-style: none;
 }
 
+.nav-links a {
+  color: #666666;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #2563eb;
+  background: #e3f2fd;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+  background: #f8f9fa;
+}
 
 .hero {
   text-align: center;
-  padding: 60px;
+  padding: 60px 0;
+  background: #f8f9fa;
 }
 
 .hero h1 {
@@ -46,12 +88,23 @@
   margin-bottom: 50px;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
 
 .card {
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
@@ -66,7 +119,27 @@
   margin-bottom: 20px;
 }
 
+.theme-toggle {
+  background: #f8f9fa;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.theme-toggle:hover {
+  background: #2563eb;
+  color: white;
+}
+
 a {
   color: #2563eb;
   text-decoration: none;
+}
+
+a:hover {
+  color: #1d4ed8;
 }
