@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Portfolio - Hussam Makhoul</title>
-    <link rel="stylesheet" href="portfolio.css" id="portfolio-light-stylesheet">
-    <link rel="stylesheet" href="portfolio-dark.css" id="portfolio-dark-stylesheet" disabled>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Portfolio - Hussam Makhoul</title>
+  <link rel="stylesheet" href="layout-a.css" id="portfolio-layout-a-stylesheet">
+  <link rel="stylesheet" href="layout-b.css" id="portfolio-layout-b-stylesheet" disabled>
 </head>
 
 <body>
-  
+
   <nav class="navbar">
     <div class="container">
       <ul class="nav-links">
@@ -18,77 +19,148 @@
         <li><a href="qualifications.html">Qualifications</a></li>
         <li><a href="service.html">Service</a></li>
         <li><a href="AIpage.html">AI</a></li>
-        <li><button id="theme-toggle" class="theme-toggle">🌙 Dark</button></li>
+        <li><button id="theme-toggle" class="layout-toggle">📐 Layout B</button></li>
       </ul>
     </div>
   </nav>
 
-  
-  <section class="hero">
-    <div class="container">
-      <h1>Technical Portfolio</h1>
-      <p class="subtitle">Projects and work that showcase my technical skills</p>
-    </div>
-  </section>
+  <div class="main-content">
 
-  
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">A selection of my most impactful technical work</p>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Technical Portfolio</h1>
+        <p class="subtitle">Projects and work that showcase my technical skills</p>
       </div>
-      
-      <div class="grid grid-2">
-        <div class="card">
-          <h3 class="card-title">Insight to Impact</h3>
-          <div class="card-meta">
-            <span class="tag primary">Python</span>
-            <span class="tag secondary">GeoPandas</span>
-            <span class="tag accent">TypeScript</span>
-            <span class="tag">Folium</span>
-          </div>
-          <p class="card-description">
-            Built a client-facing data dashboard for JPMorgan Chase Data for Good Hackathon 2025. 
-            Cleaned, visualized, and presented insights under a 35-hour deadline. 
-            Streamlined location-based expansion planning with a customized Folium Geomap.
-          </p>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A selection of my most impactful technical work</p>
         </div>
 
-        <div class="card">
-          <h3 class="card-title">NER Classifier</h3>
-          <div class="card-meta">
-            <span class="tag primary">Python</span>
-            <span class="tag secondary">BERT</span>
-            <span class="tag accent">Hugging Face</span>
-            <span class="tag">Pandas</span>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 class="card-title">Insight to Impact</h3>
+            <div class="card-details">
+              <span class="tag primary">Python</span>
+              <span class="tag secondary">GeoPandas</span>
+              <span class="tag accent">TypeScript</span>
+              <span class="tag">Folium</span>
+            </div>
+            <p class="card-description">
+              Built a client-facing data dashboard for JPMorgan Chase Data for Good Hackathon 2025.
+              Cleaned, visualized, and presented insights under a 35-hour deadline.
+              Streamlined location-based expansion planning with a customized Folium Geomap.
+            </p>
           </div>
-          <p class="card-description">
-            Engineered a BERT-based Named Entity Recognition model for eBay EvalAI ML Hackathon. 
-            Extracted 28+ product attributes from over 2M+ eBay listings. 
-            Tackled noisy text and misspellings with a whitespace tokenization approach.
-          </p>
+
+          <div class="card">
+            <h3 class="card-title">NER Classifier</h3>
+            <div class="card-details">
+              <span class="tag primary">Python</span>
+              <span class="tag secondary">BERT</span>
+              <span class="tag accent">Hugging Face</span>
+              <span class="tag">Pandas</span>
+            </div>
+            <p class="card-description">
+              Engineered a BERT-based Named Entity Recognition model for eBay EvalAI ML Hackathon.
+              Extracted 28+ product attributes from over 2M+ eBay listings.
+              Tackled noisy text and misspellings with a whitespace tokenization approach.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">ColorStack TAMU Website</h3>
+            <div class="card-details">
+              <span class="tag primary">Frontend</span>
+              <span class="tag secondary">Web Development</span>
+              <span class="tag accent">Campus Org</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <p class="card-description">
+              Developed the frontend website for ColorStack TAMU, a campus organization promoting diversity in tech.
+              Built responsive web pages with modern design principles and accessible user interface components.
+              <br><br>
+              <a href="https://tamucolorstack.com/" target="_blank" class="btn">Visit Website</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Movie Moody</h3>
+            <div class="card-details">
+              <span class="tag primary">Python</span>
+              <span class="tag secondary">CLI Tool</span>
+              <span class="tag accent">APIs</span>
+              <span class="tag">TMDb</span>
+            </div>
+            <p class="card-description">
+              Created a Python command-line tool that recommends movies based on your mood.
+              Powered by APIs like TMDb, Utelly, and Gemini, it curates relevant movies,
+              helps you find where to stream them, and lets you save them to a personal watchlist.
+              <br><br>
+              <a href="https://github.com/Hussam-Mak/MovieMoody" target="_blank" class="btn">View on GitHub</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Movi - Movie Discovery App</h3>
+            <div class="card-details">
+              <span class="tag primary">Flask</span>
+              <span class="tag secondary">Python</span>
+              <span class="tag accent">SQLite</span>
+              <span class="tag">TMDb API</span>
+            </div>
+            <p class="card-description">
+              A comprehensive web application for movie discovery and personal movie journaling.
+              Features AI-powered recommendations, rating system, and chatbot integration.
+              Built with Flask backend and modern web technologies for seamless user experience.
+              <br><br>
+              <a href="https://github.com/Eperezalonso/Movi" target="_blank" class="btn">View on GitHub</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">SafePath</h3>
+            <div class="card-details">
+              <span class="tag primary">Security</span>
+              <span class="tag secondary">Safety</span>
+              <span class="tag accent">Navigation</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <p class="card-description">
+              A safety-focused navigation application designed to help users find secure routes and locations.
+              Integrates real-time safety data and community insights to provide safer travel options
+              and emergency features for enhanced personal security.
+              <br><br>
+              <a href="https://github.com/LaurianeH-05/SafePath" target="_blank" class="btn">View on GitHub</a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="section" style="background-color: var(--background-alt);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">More Projects</h2>
-        <p class="section-subtitle">Explore my complete portfolio on GitHub</p>
-      </div>
-      <div class="text-center">
-        <a href="https://github.com/Hussam-Mak" target="_blank" class="btn">
-          View on GitHub
-        </a>
-      </div>
-    </div>
-  </section>
 
+    <section class="section" style="background-color: var(--background-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">More Projects</h2>
+          <p class="section-subtitle">Explore my complete portfolio on GitHub</p>
+        </div>
+        <div class="text-center">
+          <a href="https://github.com/Hussam-Mak" target="_blank" class="btn">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
   </div>
   <script src="theme-toggle.js"></script>
 </body>
+
 </html>

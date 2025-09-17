@@ -37,7 +37,6 @@ body {
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 8px;
-  transition: all 0.3s ease;
 }
 
 .nav-links a.active {
@@ -99,11 +98,9 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,7 +116,7 @@ body {
   margin-bottom: 20px;
 }
 
-.card-meta {
+.card-details {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -133,7 +130,6 @@ body {
   border-radius: 20px;
   font-size: 0.9rem;
   border: 1px solid #e0e0e0;
-  transition: all 0.3s ease;
 }
 
 .tag:hover {
@@ -150,12 +146,10 @@ body {
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #1d4ed8;
-  transform: translateY(-2px);
 }
 
 .text-center {
@@ -169,7 +163,6 @@ body {
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 

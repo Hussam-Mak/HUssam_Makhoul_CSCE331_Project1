@@ -119,7 +119,7 @@ body {
   margin-bottom: 20px;
 }
 
-.card-meta {
+.card-details {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -185,4 +185,33 @@ a {
 
 a:hover {
   color: #1d4ed8;
+}
+
+/* PDF Container Styling */
+.pdf-container {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-container iframe {
+  display: block;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* Responsive PDF container */
+@media (max-width: 768px) {
+  .pdf-container iframe {
+    height: 500px;
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-container iframe {
+    height: 400px;
+    min-height: 400px;
+  }
 }

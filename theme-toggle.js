@@ -1,35 +1,33 @@
-// Simple Theme Toggle
-let currentTheme = localStorage.getItem('theme') || 'light';
+let currentLayout = localStorage.getItem('layout') || 'layout-a';
 
-function toggleTheme() {
-    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', currentTheme);
-    applyTheme();
+function toggleLayout() {
+    currentLayout = currentLayout === 'layout-a' ? 'layout-b' : 'layout-a';
+    localStorage.setItem('layout', currentLayout);
+    applyLayout();
 }
 
-function applyTheme() {
-    // Get current page name
+function applyLayout() {
     const pageName = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
     
-    // Skip AI page
     if (pageName === 'AIpage') return;
+   
+    const layoutASheet = document.getElementById(`${pageName}-layout-a-stylesheet`);
+    const layoutBSheet = document.getElementById(`${pageName}-layout-b-stylesheet`);
     
-    // Toggle stylesheets
-    const lightSheet = document.getElementById(`${pageName}-light-stylesheet`);
-    const darkSheet = document.getElementById(`${pageName}-dark-stylesheet`);
-    
-    if (lightSheet && darkSheet) {
-        lightSheet.disabled = currentTheme === 'dark';
-        darkSheet.disabled = currentTheme === 'light';
+    if (layoutASheet && layoutBSheet) {
+        layoutASheet.disabled = currentLayout === 'layout-b';
+        layoutBSheet.disabled = currentLayout === 'layout-a';
     }
     
-    // Update button text
+ 
     const button = document.getElementById('theme-toggle');
-    if (button) button.textContent = currentTheme === 'light' ? '🌙 Dark' : '☀️ Light';
+    if (button) {
+        button.textContent = currentLayout === 'layout-a' ? '📐 Layout B' : '📱 Layout A';
+        button.className = 'layout-toggle';
+    }
 }
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    applyTheme();
-    document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
+    applyLayout();
+    document.getElementById('theme-toggle')?.addEventListener('click', toggleLayout);
 });

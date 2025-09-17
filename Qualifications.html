@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qualifications</title>
-    <link rel="stylesheet" href="qualifications.css" id="qualifications-light-stylesheet">
-    <link rel="stylesheet" href="qualifications-dark.css" id="qualifications-dark-stylesheet" disabled>
+  <link rel="stylesheet" href="layout-a.css" id="qualifications-layout-a-stylesheet">
+  <link rel="stylesheet" href="layout-b.css" id="qualifications-layout-b-stylesheet" disabled>
 </head>
+
 <body>
-  
+
   <nav class="navbar">
     <div class="container">
       <ul class="nav-links">
@@ -17,126 +19,148 @@
         <li><a href="qualifications.html" class="active">Qualifications</a></li>
         <li><a href="service.html">Service</a></li>
         <li><a href="AIpage.html">AI</a></li>
-        <li><button id="theme-toggle" class="theme-toggle">🌙 Dark</button></li>
+        <li><button id="theme-toggle" class="layout-toggle">📐 Layout B</button></li>
       </ul>
     </div>
   </nav>
 
-  
-  <section class="hero">
-    <div class="container">
-      <h1>Qualifications</h1>
-      <p class="subtitle">My technical skills, experience, and areas of interest</p>
-    </div>
-  </section>
+  <div class="main-content">
 
-  
-  <section class="section">
-    <div class="container">
-      <div class="card">
-        <h2 class="card-title">Resume</h2>
-        <p class="card-description">Download my complete resume to learn more about my experience and qualifications.</p>
-        <a href="ResumeM.pdf" target="_blank" class="btn">Download PDF</a>
-      </div>
-    </div>
-  </section>
 
-  
-  <section class="section" style="background-color: var(--background-alt);">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Technologies and tools I work with</p>
+    <section class="hero">
+      <div class="container">
+        <h1>Qualifications</h1>
+        <p class="subtitle">My technical skills, experience, and areas of interest</p>
       </div>
-      
-      <div class="grid grid-2">
-        <div class="card">
-          <h3 class="card-title">Programming Languages</h3>
-          <div class="card-meta">
-            <span class="tag primary">Python</span>
-            <span class="tag secondary">Java</span>
-            <span class="tag accent">C++</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML/CSS</span>
-            <span class="tag">SQL</span>
-          </div>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Frameworks & Libraries</h3>
-          <div class="card-meta">
-            <span class="tag primary">Flask</span>
-            <span class="tag secondary">React</span>
-            <span class="tag accent">Node.js</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">NumPy</span>
-          </div>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Tools & Platforms</h3>
-          <div class="card-meta">
-            <span class="tag primary">Git</span>
-            <span class="tag secondary">Docker</span>
-            <span class="tag accent">GitLab CI/CD</span>
-            <span class="tag">OpenShift</span>
-            <span class="tag">SAP HANA</span>
-          </div>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Other Technologies</h3>
-          <div class="card-meta">
-            <span class="tag primary">LaTeX</span>
-            <span class="tag secondary">Tableau</span>
-            <span class="tag accent">Linux</span>
-            <span class="tag">VMware</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Technical Areas of Interest</h2>
-        <p class="section-subtitle">Fields I'm passionate about and actively exploring</p>
-      </div>
-      
-      <div class="grid grid-2">
+
+    <section class="section">
+      <div class="container">
         <div class="card">
-          <h3 class="card-title">AI Safety & Compliance</h3>
-          <p class="card-description">
-            Inspired by my AI Compliance Copilot project, I want to build trustworthy AI systems that align with regulatory standards.
-          </p>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Cybersecurity</h3>
-          <p class="card-description">
-            I enjoy creating secure Flask dashboards and automating enterprise workflows, which deepened my interest in threat detection and cloud security.
-          </p>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Machine Learning</h3>
-          <p class="card-description">
-            Through undergraduate research on concrete strength prediction, I've explored scikit-learn, feature engineering, and model evaluation.
-          </p>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title">Quantitative Systems</h3>
-          <p class="card-description">
-            I'm fascinated by high-performance systems that use large-scale data, such as those in quant finance or real-time analytics.
-          </p>
+          <h2 class="card-title">Resume</h2>
+          <p class="card-description">View my complete resume below or download the PDF to learn more about my
+            experience and qualifications.</p>
+
+          <!-- Embedded PDF Viewer -->
+          <div class="pdf-container">
+            <iframe src="ResumeM.pdf#toolbar=1&navpanes=1&scrollbar=1" width="100%" height="600px"
+              style="border: 1px solid #e0e0e0; border-radius: 8px;">
+              <p>Your browser does not support PDFs.
+                <a href="ResumeM.pdf" target="_blank">Click here to download the PDF</a>
+              </p>
+            </iframe>
+          </div>
+
+          <div style="margin-top: 20px; text-align: center;">
+            <a href="ResumeM.pdf" target="_blank" class="btn">Download PDF</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+
+    <section class="section" style="background-color: var(--background-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 class="card-title">Programming Languages</h3>
+            <div class="card-details">
+              <span class="tag primary">Python</span>
+              <span class="tag secondary">Java</span>
+              <span class="tag accent">C++</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Frameworks & Libraries</h3>
+            <div class="card-details">
+              <span class="tag primary">Flask</span>
+              <span class="tag secondary">React</span>
+              <span class="tag accent">Node.js</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Tools & Platforms</h3>
+            <div class="card-details">
+              <span class="tag primary">Git</span>
+              <span class="tag secondary">Docker</span>
+              <span class="tag accent">GitLab CI/CD</span>
+              <span class="tag">OpenShift</span>
+              <span class="tag">SAP HANA</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Other Technologies</h3>
+            <div class="card-details">
+              <span class="tag primary">LaTeX</span>
+              <span class="tag secondary">Tableau</span>
+              <span class="tag accent">Linux</span>
+              <span class="tag">VMware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Areas of Interest</h2>
+          <p class="section-subtitle">Fields I'm passionate about and actively exploring</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 class="card-title">AI Safety & Compliance</h3>
+            <p class="card-description">
+              Inspired by my AI Compliance Copilot project, I want to build trustworthy AI systems that align with
+              regulatory standards.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Cybersecurity</h3>
+            <p class="card-description">
+              I enjoy creating secure Flask dashboards and automating enterprise workflows, which deepened my interest
+              in threat detection and cloud security.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Machine Learning</h3>
+            <p class="card-description">
+              Through undergraduate research on concrete strength prediction, I've explored scikit-learn, feature
+              engineering, and model evaluation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Quantitative Systems</h3>
+            <p class="card-description">
+              I'm fascinated by high-performance systems that use large-scale data, such as those in quant finance or
+              real-time analytics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   </div>
   <script src="theme-toggle.js"></script>
 </body>
+
 </html>

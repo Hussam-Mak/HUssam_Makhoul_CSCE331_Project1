@@ -119,7 +119,7 @@ body {
   margin-bottom: 20px;
 }
 
-.card-meta {
+.card-details {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
